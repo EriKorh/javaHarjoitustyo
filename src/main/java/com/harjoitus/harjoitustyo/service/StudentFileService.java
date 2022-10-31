@@ -13,6 +13,9 @@ import org.springframework.stereotype.Service;
 import com.harjoitus.harjoitustyo.data.Student;
 
 @Service
+
+// Tiedostonhallintaa en saanut millään toimimaan githubista löytyvän esimerkin avulla enkä netistä löytyvän tiedon avulla
+
 public class StudentFileService {
 
     public void writeToFile(List<Student> students) throws IOException {

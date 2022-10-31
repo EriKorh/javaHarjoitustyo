@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harjoitustyö</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="code.js" defer></script>
 </head>
 
 <body>
+    <!-- Lomake, joka lisää uuden opiskelijan -->
     <form action="/addstudent" method="post">
+        <h2>Add new student</h2><br>
         <label>Firstname:</label><br>
         <input id="fistname" type="text" name="firstname"><br>
         <label>Lastname:</label><br>
@@ -19,20 +23,23 @@
         <input id="classname" type="text" name="classname"><br>
         <button>Add student</button>
     </form>
-
+    <!-- Lomake, joka lisää uuden kurssin-->
     <form action="/addcourse" method="post">
+        <h2>Add new course</h2>
         <label>Coursename:</label><br>
         <input id="coursename" type="text" name="coursename"><br>
         <label>Teacher:</label><br>
         <input id="teacher" type="text" name="teacher"><br>
         <label>Credits:</label><br>
         <input id="credits" type="number" name="credits"><br>
-        <input type="checkbox" value="1"/><label>Online Course</label>
-        <input type="checkbox" value="2"/><label>Classroom Course</label><br>
+        <label>If online course, type in Zoom address</label><br>
+        <input id="zoomAddress" type="text" name="zoomAddress"><br>
         <button>Add course</button>
     </form>
 
+    <!-- Tämä jäi toteuttamatta -->
     <form action="/studenttocourse" method="post">
+        <h2>Add student to course</h2>
         <label>Student id:</label><br>
         <input id="studentid" type="number" name="studentid"><br>
         <label>Course id:</label><br>

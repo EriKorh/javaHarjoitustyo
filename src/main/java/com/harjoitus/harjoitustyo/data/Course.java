@@ -1,6 +1,6 @@
 package com.harjoitus.harjoitustyo.data;
 
-public class Course {
+public abstract class Course {
     private String courseName;
     private String teacher;
     private int credits;
@@ -18,7 +18,7 @@ public class Course {
         this("","",0);
     }
 
-    //public abstract String GetMoreInfo();
+    public abstract String GetMoreInfo();
 
     public String getCourseName() {
         return this.courseName;

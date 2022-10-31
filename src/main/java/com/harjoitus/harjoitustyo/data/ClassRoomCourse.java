@@ -1,23 +1,23 @@
 package com.harjoitus.harjoitustyo.data;
 
 public class ClassRoomCourse extends Course {
-    private String ZoomAddress;
+    private String classroom;
     
-    public ClassRoomCourse(String courseName, String teacher, int credits, String ZoomAddress) {
+    public ClassRoomCourse(String courseName, String teacher, int credits, String classroom) {
         super(courseName, teacher, credits);
-        this.ZoomAddress = ZoomAddress;
+        this.classroom = classroom;
     }
 
     public String GetMoreInfo() {
-        return ZoomAddress;
+        return classroom;
     }
 
-    public String getZoomAddress() {
-        return this.ZoomAddress;
+    public String getClassroom() {
+        return this.classroom;
     }
 
-    public void setZoomAddress(String ZoomAddress) {
-        this.ZoomAddress = ZoomAddress;
+    public void setClassroom(String classroom) {
+        this.classroom = classroom;
     }
 }
 
