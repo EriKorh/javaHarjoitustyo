@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harjoitustyö</title>
+    <script src="code.js" defer></script>
+</head>
+
+<body>
+    <form action="/addstudent" method="post">
+        <label>Firstname:</label><br>
+        <input id="fistname" type="text" name="firstname"><br>
+        <label>Lastname:</label><br>
+        <input id="lastname" type="text" name="lastname"><br>
+        <label>Classname:</label><br>
+        <input id="classname" type="text" name="classname"><br>
+        <button>Add student</button>
+    </form>
+
+    <form action="/addcourse" method="post">
+        <label>Coursename:</label><br>
+        <input id="coursename" type="text" name="coursename"><br>
+        <label>Teacher:</label><br>
+        <input id="teacher" type="text" name="teacher"><br>
+        <label>Credits:</label><br>
+        <input id="credits" type="number" name="credits"><br>
+        <input type="checkbox" value="1"/><label>Online Course</label>
+        <input type="checkbox" value="2"/><label>Classroom Course</label><br>
+        <button>Add course</button>
+    </form>
+
+    <form action="/studenttocourse" method="post">
+        <label>Student id:</label><br>
+        <input id="studentid" type="number" name="studentid"><br>
+        <label>Course id:</label><br>
+        <input id="courseid" type="number" name="courseid"><br>
+        <button>Add student to course</button>
+    </form>
+</body>
+</html>
